@@ -122,10 +122,10 @@
         layer8 {
             // Gaming layer
             bindings = <
-              &kp GRAVE  &kp Q  &kp W  &kp E        &kp R       &kp T               &kp Y      &kp U          &kp UP     &kp O      &kp P          &kp LEFT_BRACKET
-              &none      &kp A  &kp S  &kp D        &kp F       &kp G               &kp H      &kp LEFT       &kp DOWN   &kp RIGHT  &kp SEMICOLON  &kp SINGLE_QUOTE
-              &none      &kp Z  &kp X  &kp C        &kp V       &kp B               &kp N      &kp M          &kp COMMA  &kp DOT    &kp SLASH      &kp RIGHT_BRACKET
-                                       &kp ESCAPE   &kp SPACE   &kp TAB             &kp ENTER  &kp BACKSPACE  &kp
+              &kp GRAVE  &kp Q  &kp W  &kp E        &kp R       &kp T               &kp Y      &kp U          &kp UP      &kp O      &kp P          &kp LEFT_BRACKET
+              &none      &kp A  &kp S  &kp D        &kp F       &kp G               &kp H      &kp LEFT       &kp DOWN    &kp RIGHT  &kp SEMICOLON  &kp SINGLE_QUOTE
+              &to 0      &kp Z  &kp X  &kp C        &kp V       &kp B               &kp N      &kp M          &kp COMMA   &kp DOT    &kp SLASH      &kp RIGHT_BRACKET
+                                       &kp ESCAPE   &kp SPACE   &kp TAB             &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
     };
