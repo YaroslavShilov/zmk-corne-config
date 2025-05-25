@@ -116,7 +116,16 @@
                 &bt BT_CLR_ALL  &bt BT_CLR  &none  &none  &none       &none                           &none  &none  &none  &none  &none  &none
                 &bt BT_SEL 0    &bt BT_NXT  &none  &none  &none       &kp LC(EQUAL)                   &none  &none  &none  &none  &none  &none
                 &bt BT_SEL 1    &bt BT_PRV  &none  &none  &none       &kp LC(LS(BACKSLASH))           &none  &none  &none  &none  &none  &none
-                                                   &none  &kp LC(N0)  &kp LC(MINUS)                   &none  &none  &none
+                                                   &none  &kp LC(N0)  &kp LC(MINUS)                   &none  &none  &to 8
+            >;
+        };
+        layer8 {
+            // Gaming layer
+            bindings = <
+              &kp GRAVE  &kp Q  &kp W  &kp E        &kp R       &kp T               &kp Y      &kp U          &kp UP     &kp O      &kp P          &kp LEFT_BRACKET
+              &none      &kp A  &kp S  &kp D        &kp F       &kp G               &kp H      &kp LEFT       &kp DOWN   &kp RIGHT  &kp SEMICOLON  &kp SINGLE_QUOTE
+              &none      &kp Z  &kp X  &kp C        &kp V       &kp B               &kp N      &kp M          &kp COMMA  &kp DOT    &kp SLASH      &kp RIGHT_BRACKET
+                                       &kp ESCAPE   &kp SPACE   &kp TAB             &kp ENTER  &kp BACKSPACE  &kp
             >;
         };
     };
