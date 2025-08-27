@@ -113,18 +113,18 @@
         layer7 {
             // MAGIC LAYER
             bindings = <
-                &bt BT_CLR  &none  &none  &none         &none         &none             &none  &none  &none  &none  &none  &bt BT_CLR_ALL
-                &bt BT_NXT  &none  &none  &none         &none         &none             &none  &none  &none  &none  &none  &none
-                &bt BT_PRV  &none  &none  &none         &none         &none             &none  &none  &none  &none  &none  &none
-                                          &bt BT_SEL 0  &bt BT_SEL 1  &to 0             &none  &to 0  &to 8
+                &bt BT_CLR  &bt BT_NXT  &bt BT_PRV    &none         &none         &none  &none  &none  &none  &none  &none  &bt BT_CLR_ALL
+                &none       &none       &none         &none         &none         &none  &none  &none  &none  &none  &none  &none
+                &none       &none       &none         &none         &none         &none  &none  &none  &none  &none  &none  &none
+                                        &bt BT_SEL 0  &bt BT_SEL 1  &to 0         &none  &to 0  &to 8
             >;
         };
         layer8 {
             // GAMING LAYER
             bindings = <
               &kp GRAVE  &kp Q  &kp W  &kp E        &kp R       &kp T               &kp Y      &kp U      &kp UP      &kp O      &kp P          &kp LEFT_BRACKET
-              &none      &kp A  &kp S  &kp D        &kp F       &kp G               &kp H      &kp LEFT   &kp DOWN    &kp RIGHT  &kp SEMICOLON  &kp SINGLE_QUOTE
-              &to 0      &kp Z  &kp X  &kp C        &kp V       &kp B               &kp N      &kp M      &kp COMMA   &kp DOT    &kp SLASH      &kp RIGHT_BRACKET
+              &kp LSHIFT &kp A  &kp S  &kp D        &kp F       &kp G               &kp H      &kp LEFT   &kp DOWN    &kp RIGHT  &kp SEMICOLON  &kp SINGLE_QUOTE
+              &kp LCTRL  &kp Z  &kp X  &kp C        &kp V       &kp B               &kp N      &kp M      &kp COMMA   &kp DOT    &kp SLASH      &kp RIGHT_BRACKET
                                        &kp ESCAPE   &kp SPACE   &kp TAB             &kp ENTER  &to 0      &kp DELETE
             >;
         };
