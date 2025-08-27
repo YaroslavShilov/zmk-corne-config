@@ -50,10 +50,10 @@
         default_layer {
             // DEFAULT LAYER
             bindings = <
-                &kp GRAVE  &kp Q       &kp W        &lt 7 E       &kp R         &kp T               &kp Y        &kp U            &kp I        &kp O         &kp P               &kp LEFT_BRACKET
-                &none      &hm LGUI A  &hm LALT S   &hm LCTRL D   &hm LSHIFT F  &kp G               &kp H        &hm LSHIFT J     &hm LCTRL K  &hm LALT L    &hm LGUI SEMICOLON  &kp SINGLE_QUOTE
-                &none      &kp Z       &hm RALT X   &kp C         &kp V         &kp B               &kp N        &kp M            &kp COMMA    &hm RALT DOT  &kp SLASH           &kp RIGHT_BRACKET
-                                                    &lt 3 ESCAPE  &lt 1 SPACE   &lt 2 TAB           &lt 5 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE
+                &kp EQUAL    &kp Q       &kp W       &kp E         &kp R         &kp T               &kp Y        &kp U            &kp I        &kp O         &kp P               &kp MINUS
+                &caps_word   &hm LGUI A  &hm LALT S  &hm LCTRL D   &hm LSHIFT F  &kp G               &kp H        &hm LSHIFT J     &hm LCTRL K  &hm LALT L    &hm LGUI SEMICOLON  &kp SINGLE_QUOTE
+                &lt 7 GRAVE  &kp Z       &hm RALT X  &kp C         &kp V         &kp B               &kp N        &kp M            &kp COMMA    &hm RALT DOT  &kp SLASH           &kp BACKSLASH
+                                                     &lt 3 ESCAPE  &lt 1 SPACE   &lt 2 TAB           &lt 5 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE
             >;
         };
         layer1 {
@@ -93,7 +93,7 @@
             >;
         };
         layer5 {
-            // Symbols LAYER
+            // SYMBOLS LAYER
             bindings = <
                 &none  &kp RIGHT_BRACE    &kp AMPS         &kp ASTERISK          &kp LPAR               &kp LEFT_BRACE            &none  &none       &none     &none     &none       &none
                 &none  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                  &none  &kp LSHIFT  &kp LCTRL &kp LALT  &kp LGUI    &none
@@ -111,21 +111,21 @@
             >;
         };
         layer7 {
-            // GRAPHICS EDITOR LAYER
+            // MAGIC LAYER
             bindings = <
-                &bt BT_CLR_ALL  &bt BT_CLR  &none  &none  &none       &none                           &none  &none  &none  &none  &none  &none
-                &bt BT_SEL 0    &bt BT_NXT  &none  &none  &none       &kp LC(EQUAL)                   &none  &none  &none  &none  &none  &none
-                &bt BT_SEL 1    &bt BT_PRV  &none  &none  &none       &kp LC(LS(BACKSLASH))           &none  &none  &none  &none  &none  &none
-                                                   &none  &kp LC(N0)  &kp LC(MINUS)                   &none  &none  &to 8
+                &bt BT_CLR  &none  &none  &none         &none         &none             &none  &none  &none  &none  &none  &bt BT_CLR_ALL
+                &bt BT_NXT  &none  &none  &none         &none         &none             &none  &none  &none  &none  &none  &none
+                &bt BT_PRV  &none  &none  &none         &none         &none             &none  &none  &none  &none  &none  &none
+                                          &bt BT_SEL 0  &bt BT_SEL 1  &to 0             &none  &to 0  &to 8
             >;
         };
         layer8 {
-            // Gaming layer
+            // GAMING LAYER
             bindings = <
-              &kp GRAVE  &kp Q  &kp W  &kp E        &kp R       &kp T               &kp Y      &kp U          &kp UP      &kp O      &kp P          &kp LEFT_BRACKET
-              &none      &kp A  &kp S  &kp D        &kp F       &kp G               &kp H      &kp LEFT       &kp DOWN    &kp RIGHT  &kp SEMICOLON  &kp SINGLE_QUOTE
-              &to 0      &kp Z  &kp X  &kp C        &kp V       &kp B               &kp N      &kp M          &kp COMMA   &kp DOT    &kp SLASH      &kp RIGHT_BRACKET
-                                       &kp ESCAPE   &kp SPACE   &kp TAB             &kp ENTER  &kp BACKSPACE  &kp DELETE
+              &kp GRAVE  &kp Q  &kp W  &kp E        &kp R       &kp T               &kp Y      &kp U      &kp UP      &kp O      &kp P          &kp LEFT_BRACKET
+              &none      &kp A  &kp S  &kp D        &kp F       &kp G               &kp H      &kp LEFT   &kp DOWN    &kp RIGHT  &kp SEMICOLON  &kp SINGLE_QUOTE
+              &to 0      &kp Z  &kp X  &kp C        &kp V       &kp B               &kp N      &kp M      &kp COMMA   &kp DOT    &kp SLASH      &kp RIGHT_BRACKET
+                                       &kp ESCAPE   &kp SPACE   &kp TAB             &kp ENTER  &to 0      &kp DELETE
             >;
         };
     };
