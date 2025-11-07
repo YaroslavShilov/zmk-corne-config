@@ -51,7 +51,7 @@
         //  &none  &none  &none  &none  &none  &none           &none  &none  &none  &none  &none  &none
         //                       &none  &none  &none           &none  &none  &none
 
-        base {
+        default_layer {
             // DEFAULT LAYER
 
             bindings = <
