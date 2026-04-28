@@ -11,6 +11,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // #include <dt-bindings/zmk/pointing.h>
 
@@ -133,7 +134,7 @@
             // MAGIC LAYER
 
             bindings = <
-&bt BT_CLR  &none  &none  &none         &none         &kp B           &none  &none  &none  &none  &none  &bt BT_CLR_ALL
+&bt BT_CLR  &none  &none  &none         &none         &none           &none  &none  &none  &none  &none  &bt BT_CLR_ALL
 &none       &none  &none  &none         &none         &none           &none  &none  &none  &none  &none  &none
 &none       &none  &none  &bt BT_PRV    &bt BT_NXT    &none           &none  &none  &none  &none  &none  &none
                           &bt BT_SEL 2  &bt BT_SEL 0  &bt BT_SEL 1    &none  &to 0  &none
